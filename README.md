@@ -162,3 +162,18 @@ Whisper Base achieved better transcription accuracy than Whisper Tiny on the 20-
 Although Whisper Tiny was faster, Whisper Base satisfied the predefined accuracy-based selection criteria and was registered as the Champion.
 
 The project demonstrates model comparison, experiment tracking, Champion-Challenger selection, model registration, aliases and inference using MLflow.
+
+
+## MLflow Evidence
+
+### Whisper Base Metrics
+![Whisper Base Metrics](screenshots/Whisper_MLflow_Screenshots/base_metrics.png)
+
+### Whisper Tiny Metrics
+![Whisper Tiny Metrics](screenshots/Whisper_MLflow_Screenshots/tiny_metrics.png)
+
+### Model Registry
+![Model Registry Aliases](screenshots/Whisper_MLflow_Screenshots/model_registry_aliases.png)
+
+### Champion Predictions
+![Champion Predictions](screenshots/Whisper_MLflow_Screenshots/champion_predictions.png)
