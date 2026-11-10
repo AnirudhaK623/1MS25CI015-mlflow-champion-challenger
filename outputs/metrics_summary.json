@@ -1,0 +1,27 @@
+{
+    "task": "Automatic Speech Recognition",
+    "dataset": "LibriSpeech Clean Test",
+    "sample_count": 20,
+    "champion": "openai/whisper-base",
+    "challenger": "openai/whisper-tiny",
+    "decision_rule": {
+        "primary_metric": "WER",
+        "optimization": "Lower is better",
+        "minimum_absolute_improvement": 0.005,
+        "maximum_acceptable_wer": 0.05,
+        "tie_breaker": "Lower average inference latency"
+    },
+    "results": {
+        "whisper_tiny": {
+            "wer": 0.04308390022675737,
+            "average_latency_seconds": 3.610921758300003,
+            "total_inference_seconds": 72.21843516600006
+        },
+        "whisper_base": {
+            "wer": 0.024943310657596373,
+            "average_latency_seconds": 8.204083604249956,
+            "total_inference_seconds": 164.08167208499913
+        }
+    },
+    "conclusion": "Whisper Base is selected as Champion because it achieved lower WER than Whisper Tiny and satisfied the predefined accuracy guardrail. Whisper Tiny is faster but less accurate."
+}

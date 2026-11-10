@@ -1,0 +1,6 @@
+{
+    "hf_model_id": "openai/whisper-base",
+    "task": "automatic-speech-recognition",
+    "device": -1,
+    "language": "english"
+}

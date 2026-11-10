@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# MLflow local tracking data
+mlruns/
+mlflow.db
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+*.zip
